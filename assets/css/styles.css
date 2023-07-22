@@ -1,0 +1,189 @@
+@font-face {
+    font-family: "TitilliumWeb-Light";
+    src: url('../fonts/TitilliumWeb-Light.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "TitilliumWeb-Bold";
+    src: url('../fonts/TitilliumWeb-Bold.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "TitilliumWeb-Regular";
+    src: url('../fonts/TitilliumWeb-Regular.ttf') format("truetype");
+}
+
+body {
+    font-family: "TitilliumWeb-Regular";
+    user-select: none;
+}
+
+.font-bold {
+    font-family: "TitilliumWeb-Bold";
+}
+
+section {
+    /* overflow-x: hidden; */
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.transition {
+    transition: all .4s;
+}
+
+.primary-text {
+    color: #555555;
+}
+
+.primary-bg {
+    background-color: #555555;
+}
+
+.secondary-text {
+    color: #f15c4c;
+}
+
+.secondary-bg {
+    background-color: #f15c4c;
+}
+
+.third-text {
+    color: #f8ab65;
+}
+
+.third-bg {
+    background-color: #f8ab65;
+}
+
+.forth-text {
+    color: #f4f1d7;
+}
+
+.forth-bg {
+    background-color: #f4f1d7;
+}
+
+.bg-gray {
+    background-color: #fafafa;
+}
+
+.h-40 {
+    height: 79px;
+}
+
+.h-80 {
+    height: 140px;
+}
+
+.w-80 {
+    width: 130px;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+.after {
+    position: relative;
+}
+
+.after::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -14px;
+    width: 100%;
+    height: 4px;
+    border-radius: 33px;
+    background-color: #f15c4c;
+}
+
+.overlay::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.411);
+}
+
+/* header */
+img[alt='logo'] {
+    width: 83px;
+}
+
+header ul li a {
+    color: white !important;
+    transition: all .4s;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    color: #f8ab65 !important;
+}
+
+header .dropdown-menu a {
+    color: black !important;
+}
+
+.dropdown-toggle.profileIcon::after {
+    display: none;
+}
+
+/* banner */
+.swiper-button-prev,
+.swiper-button-next {
+    background: #ffffff85;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+/* search box */
+#searchBox .fade:not(.show) {
+    display: none !important;
+}
+
+#searchBox .nav-link.active {
+    background-color: #f15c4c;
+}
+
+#searchBox .nav-link {
+    background-color: #f15c4c8c;
+}
+
+/* footer */
+footer img[alt='footer-logo'] {
+    width: 165px;
+}
+
+/* responsive */
+
+@media only screen and (max-width:1200px) {}
+
+@media only screen and (max-width:992px) {
+    .nav-tabs {
+        position: static !important;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width:768px) {}
+
+@media only screen and (max-width:576px) {}
+
+@media only screen and (max-width:400px) {}
