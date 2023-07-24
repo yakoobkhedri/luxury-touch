@@ -25,7 +25,9 @@ body {
 section {
     /* overflow-x: hidden; */
 }
-
+.outline-none{
+    outline: none;
+}
 .cursor {
     cursor: pointer;
 }
