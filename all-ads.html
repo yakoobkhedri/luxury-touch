@@ -98,7 +98,8 @@
 
         <!-- breadcrumb -->
         <section class="bg-gray py-3">
-            <nav class="right container" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+            <nav class="right container"
+                style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
                 aria-label="breadcrumb">
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item"><a class="secondary-text" href="index.html">Home</a></li>
@@ -108,21 +109,443 @@
         </section>
 
         <!-- all ads -->
-        <section id="boats" class="my-5">
+        <section id="ads" class="my-5">
             <div class="container">
                 <!-- content -->
                 <div class="row mt-5">
                     <!-- filter -->
-                    <div class="col-lg-3">
-                       <div>
-                        <div class="secondary-bg py-2 px-3 text-white">Araç Seçiniz</div>
-                        <div class="bg-gray p-3">
-
+                    <form class="col-lg-3 top" id="sidebar">
+                        <div>
+                            <div>
+                                <div class="secondary-bg py-2 px-3 text-white">Araç Seçiniz</div>
+                                <div class="bg-gray p-3">
+                                    <select class="bg-white w-100 border p-2 mb-2">
+                                        <option>item 1</option>
+                                        <option>item 1</option>
+                                        <option>item 1</option>
+                                        <option>item 1</option>
+                                        <option>item 1</option>
+                                    </select>
+                                    <select class="bg-white w-100 border p-2 mb-2">
+                                        <option>item 1</option>
+                                        <option>item 1</option>
+                                        <option>item 1</option>
+                                        <option>item 1</option>
+                                        <option>item 1</option>
+                                    </select>
+                                    <select class="bg-white w-100 border p-2 mb-2">
+                                        <option>item 1</option>
+                                        <option>item 1</option>
+                                        <option>item 1</option>
+                                        <option>item 1</option>
+                                        <option>item 1</option>
+                                    </select>
+                                    <select class="bg-white w-100 border p-2">
+                                        <option>item 1</option>
+                                        <option>item 1</option>
+                                        <option>item 1</option>
+                                        <option>item 1</option>
+                                        <option>item 1</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="secondary-bg py-2 px-3 text-white">Filtreler</div>
+                                <div class="bg-gray p-3 pb-5">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    Kimden
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse"
+                                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <label class="cursor mb-2 d-block">
+                                                        <input type="checkbox" class="form-check-input me-1">
+                                                        OtoSOR'dan
+                                                    </label>
+                                                    <label class="cursor mb-2 d-block">
+                                                        <input type="checkbox" class="form-check-input me-1">
+                                                        OtoSOR'dan
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white my-2 p-3">
+                                        <label class="font-bold">Lokasyon</label>
+                                        <select class="bg-white w-100 border p-2 my-2">
+                                            <option>item 1</option>
+                                            <option>item 1</option>
+                                            <option>item 1</option>
+                                            <option>item 1</option>
+                                            <option>item 1</option>
+                                        </select>
+                                    </div>
+                                    <div class="bg-white my-2 p-3">
+                                        <label class="font-bold">Fiyat</label>
+                                        <div class="bg-white d-flex gap-2 flex-column flex-xl-row align-items-center p-2 my-2">
+                                            <input class="form-control">
+                                            <input class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="bg-white my-2 p-3">
+                                        <label class="font-bold">Peşinat</label>
+                                        <div class="bg-white d-flex gap-2 flex-column flex-xl-row align-items-center p-2 my-2">
+                                            <input class="form-control">
+                                            <input class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="bg-white my-2 p-3">
+                                        <label class="font-bold">Taksit Tutarı</label>
+                                        <div class="bg-white d-flex gap-2 flex-column flex-xl-row align-items-center my-2">
+                                            <input class="form-control">
+                                            <input class="form-control">
+                                        </div>
+                                        <select class="bg-white w-100 border p-2 my-2">
+                                            <option>item 1</option>
+                                            <option>item 1</option>
+                                            <option>item 1</option>
+                                            <option>item 1</option>
+                                            <option>item 1</option>
+                                        </select>
+                                    </div>
+                                    <div class="bg-white my-2 p-3">
+                                        <label class="font-bold">Yıl</label>
+                                        <div class="bg-white d-flex gap-2 flex-column flex-xl-row align-items-center p-2 my-2">
+                                            <input class="form-control">
+                                            <input class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseTwo" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    Kimden
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <label class="cursor mb-2 d-block">
+                                                        <input type="checkbox" class="form-check-input me-1">
+                                                        OtoSOR'dan
+                                                    </label>
+                                                    <label class="cursor mb-2 d-block">
+                                                        <input type="checkbox" class="form-check-input me-1">
+                                                        OtoSOR'dan
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="submit" class="btn btn-primary mt-4 w-100 d-block"
+                                        value="Filtreleri Uygula">
+                                    <a class="d-block mt-3 text-decoration-underline text-dark text-center">Filtre
+                                        Ayarlarını Sıfırla</a>
+                                </div>
+                            </div>
                         </div>
-                       </div>
-                    </div>
+                    </form>
                     <!--  -->
-                    <div class="col-lg-9"></div>
+                    <div class="col-lg-9 bottom">
+                        <div class="d-flex flex-wrap gap-3 justify-content-between align-items-center mb-3">
+                            <div id="openFilter" class="d-lg-none d-flex align-items-center bg-gray fw-bold gap-2 border border-primary cursor py-1 px-3 text-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-funnel-fill" viewBox="0 0 16 16">
+                                    <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2z"/>
+                                  </svg>
+                                <span>Filtreler</span>
+                            </div>
+                           <p class="mb-0"><span class="font-bold">7.380</span> adet ilan gösteriliyor.</p>
+                           <select class="border px-5 bg-gray">
+                            <option>item</option>
+                            <option>item</option>
+                            <option>item</option>
+                            <option>item</option>
+                           </select>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                <div class="text-dark">
+                                    <img alt="vehicle-type"
+                                        src="assets/img/arac_resimleri_4085458_240x180-15676a10-ea64-4e90-a419-a71994ccf0c9.jpg"
+                                        class="h-80 w-100 img-fluid">
+                                    <div class="p-2 bg-white">
+                                        <p class="h5">Honda Jazz 1.4<br>Joy Plus i-shift</p>
+                                        <p class="font-bold h4">$ 655.000</p>
+                                        <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between">
+                                            <small>Istanbul</small>
+                                            <small>63.510 KM</small>
+                                            <small>2011</small>
+                                        </div>
+                                        <a class="btn secondary-bg text-white mt-1 ms-auto d-table py-0">rent car</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                <div class="text-dark">
+                                    <img alt="vehicle-type"
+                                        src="assets/img/arac_resimleri_4085458_240x180-15676a10-ea64-4e90-a419-a71994ccf0c9.jpg"
+                                        class="h-80 w-100 img-fluid">
+                                    <div class="p-2 bg-white">
+                                        <p class="h5">Honda Jazz 1.4<br>Joy Plus i-shift</p>
+                                        <p class="font-bold h4">$ 655.000</p>
+                                        <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between">
+                                            <small>Istanbul</small>
+                                            <small>63.510 KM</small>
+                                            <small>2011</small>
+                                        </div>
+                                        <a class="btn secondary-bg text-white mt-1 ms-auto d-table py-0">rent car</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                <div class="text-dark">
+                                    <img alt="vehicle-type"
+                                        src="assets/img/arac_resimleri_4085458_240x180-15676a10-ea64-4e90-a419-a71994ccf0c9.jpg"
+                                        class="h-80 w-100 img-fluid">
+                                    <div class="p-2 bg-white">
+                                        <p class="h5">Honda Jazz 1.4<br>Joy Plus i-shift</p>
+                                        <p class="font-bold h4">$ 655.000</p>
+                                        <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between">
+                                            <small>Istanbul</small>
+                                            <small>63.510 KM</small>
+                                            <small>2011</small>
+                                        </div>
+                                        <a class="btn secondary-bg text-white mt-1 ms-auto d-table py-0">rent car</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                <div class="text-dark">
+                                    <img alt="vehicle-type"
+                                        src="assets/img/arac_resimleri_4085458_240x180-15676a10-ea64-4e90-a419-a71994ccf0c9.jpg"
+                                        class="h-80 w-100 img-fluid">
+                                    <div class="p-2 bg-white">
+                                        <p class="h5">Honda Jazz 1.4<br>Joy Plus i-shift</p>
+                                        <p class="font-bold h4">$ 655.000</p>
+                                        <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between">
+                                            <small>Istanbul</small>
+                                            <small>63.510 KM</small>
+                                            <small>2011</small>
+                                        </div>
+                                        <a class="btn secondary-bg text-white mt-1 ms-auto d-table py-0">rent car</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                <div class="text-dark">
+                                    <img alt="vehicle-type"
+                                        src="assets/img/arac_resimleri_4085458_240x180-15676a10-ea64-4e90-a419-a71994ccf0c9.jpg"
+                                        class="h-80 w-100 img-fluid">
+                                    <div class="p-2 bg-white">
+                                        <p class="h5">Honda Jazz 1.4<br>Joy Plus i-shift</p>
+                                        <p class="font-bold h4">$ 655.000</p>
+                                        <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between">
+                                            <small>Istanbul</small>
+                                            <small>63.510 KM</small>
+                                            <small>2011</small>
+                                        </div>
+                                        <a class="btn secondary-bg text-white mt-1 ms-auto d-table py-0">rent car</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                <div class="text-dark">
+                                    <img alt="vehicle-type"
+                                        src="assets/img/arac_resimleri_4085458_240x180-15676a10-ea64-4e90-a419-a71994ccf0c9.jpg"
+                                        class="h-80 w-100 img-fluid">
+                                    <div class="p-2 bg-white">
+                                        <p class="h5">Honda Jazz 1.4<br>Joy Plus i-shift</p>
+                                        <p class="font-bold h4">$ 655.000</p>
+                                        <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between">
+                                            <small>Istanbul</small>
+                                            <small>63.510 KM</small>
+                                            <small>2011</small>
+                                        </div>
+                                        <a class="btn secondary-bg text-white mt-1 ms-auto d-table py-0">rent car</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                <div class="text-dark">
+                                    <img alt="vehicle-type"
+                                        src="assets/img/arac_resimleri_4085458_240x180-15676a10-ea64-4e90-a419-a71994ccf0c9.jpg"
+                                        class="h-80 w-100 img-fluid">
+                                    <div class="p-2 bg-white">
+                                        <p class="h5">Honda Jazz 1.4<br>Joy Plus i-shift</p>
+                                        <p class="font-bold h4">$ 655.000</p>
+                                        <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between">
+                                            <small>Istanbul</small>
+                                            <small>63.510 KM</small>
+                                            <small>2011</small>
+                                        </div>
+                                        <a class="btn secondary-bg text-white mt-1 ms-auto d-table py-0">rent car</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                <div class="text-dark">
+                                    <img alt="vehicle-type"
+                                        src="assets/img/arac_resimleri_4085458_240x180-15676a10-ea64-4e90-a419-a71994ccf0c9.jpg"
+                                        class="h-80 w-100 img-fluid">
+                                    <div class="p-2 bg-white">
+                                        <p class="h5">Honda Jazz 1.4<br>Joy Plus i-shift</p>
+                                        <p class="font-bold h4">$ 655.000</p>
+                                        <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between">
+                                            <small>Istanbul</small>
+                                            <small>63.510 KM</small>
+                                            <small>2011</small>
+                                        </div>
+                                        <a class="btn secondary-bg text-white mt-1 ms-auto d-table py-0">rent car</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                <div class="text-dark">
+                                    <img alt="vehicle-type"
+                                        src="assets/img/arac_resimleri_4085458_240x180-15676a10-ea64-4e90-a419-a71994ccf0c9.jpg"
+                                        class="h-80 w-100 img-fluid">
+                                    <div class="p-2 bg-white">
+                                        <p class="h5">Honda Jazz 1.4<br>Joy Plus i-shift</p>
+                                        <p class="font-bold h4">$ 655.000</p>
+                                        <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between">
+                                            <small>Istanbul</small>
+                                            <small>63.510 KM</small>
+                                            <small>2011</small>
+                                        </div>
+                                        <a class="btn secondary-bg text-white mt-1 ms-auto d-table py-0">rent car</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                <div class="text-dark">
+                                    <img alt="vehicle-type"
+                                        src="assets/img/arac_resimleri_4085458_240x180-15676a10-ea64-4e90-a419-a71994ccf0c9.jpg"
+                                        class="h-80 w-100 img-fluid">
+                                    <div class="p-2 bg-white">
+                                        <p class="h5">Honda Jazz 1.4<br>Joy Plus i-shift</p>
+                                        <p class="font-bold h4">$ 655.000</p>
+                                        <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between">
+                                            <small>Istanbul</small>
+                                            <small>63.510 KM</small>
+                                            <small>2011</small>
+                                        </div>
+                                        <a class="btn secondary-bg text-white mt-1 ms-auto d-table py-0">rent car</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                <div class="text-dark">
+                                    <img alt="vehicle-type"
+                                        src="assets/img/arac_resimleri_4085458_240x180-15676a10-ea64-4e90-a419-a71994ccf0c9.jpg"
+                                        class="h-80 w-100 img-fluid">
+                                    <div class="p-2 bg-white">
+                                        <p class="h5">Honda Jazz 1.4<br>Joy Plus i-shift</p>
+                                        <p class="font-bold h4">$ 655.000</p>
+                                        <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between">
+                                            <small>Istanbul</small>
+                                            <small>63.510 KM</small>
+                                            <small>2011</small>
+                                        </div>
+                                        <a class="btn secondary-bg text-white mt-1 ms-auto d-table py-0">rent car</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                <div class="text-dark">
+                                    <img alt="vehicle-type"
+                                        src="assets/img/arac_resimleri_4085458_240x180-15676a10-ea64-4e90-a419-a71994ccf0c9.jpg"
+                                        class="h-80 w-100 img-fluid">
+                                    <div class="p-2 bg-white">
+                                        <p class="h5">Honda Jazz 1.4<br>Joy Plus i-shift</p>
+                                        <p class="font-bold h4">$ 655.000</p>
+                                        <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between">
+                                            <small>Istanbul</small>
+                                            <small>63.510 KM</small>
+                                            <small>2011</small>
+                                        </div>
+                                        <a class="btn secondary-bg text-white mt-1 ms-auto d-table py-0">rent car</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                <div class="text-dark">
+                                    <img alt="vehicle-type"
+                                        src="assets/img/arac_resimleri_4085458_240x180-15676a10-ea64-4e90-a419-a71994ccf0c9.jpg"
+                                        class="h-80 w-100 img-fluid">
+                                    <div class="p-2 bg-white">
+                                        <p class="h5">Honda Jazz 1.4<br>Joy Plus i-shift</p>
+                                        <p class="font-bold h4">$ 655.000</p>
+                                        <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between">
+                                            <small>Istanbul</small>
+                                            <small>63.510 KM</small>
+                                            <small>2011</small>
+                                        </div>
+                                        <a class="btn secondary-bg text-white mt-1 ms-auto d-table py-0">rent car</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                <div class="text-dark">
+                                    <img alt="vehicle-type"
+                                        src="assets/img/arac_resimleri_4085458_240x180-15676a10-ea64-4e90-a419-a71994ccf0c9.jpg"
+                                        class="h-80 w-100 img-fluid">
+                                    <div class="p-2 bg-white">
+                                        <p class="h5">Honda Jazz 1.4<br>Joy Plus i-shift</p>
+                                        <p class="font-bold h4">$ 655.000</p>
+                                        <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between">
+                                            <small>Istanbul</small>
+                                            <small>63.510 KM</small>
+                                            <small>2011</small>
+                                        </div>
+                                        <a class="btn secondary-bg text-white mt-1 ms-auto d-table py-0">rent car</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                <div class="text-dark">
+                                    <img alt="vehicle-type"
+                                        src="assets/img/arac_resimleri_4085458_240x180-15676a10-ea64-4e90-a419-a71994ccf0c9.jpg"
+                                        class="h-80 w-100 img-fluid">
+                                    <div class="p-2 bg-white">
+                                        <p class="h5">Honda Jazz 1.4<br>Joy Plus i-shift</p>
+                                        <p class="font-bold h4">$ 655.000</p>
+                                        <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between">
+                                            <small>Istanbul</small>
+                                            <small>63.510 KM</small>
+                                            <small>2011</small>
+                                        </div>
+                                        <a class="btn secondary-bg text-white mt-1 ms-auto d-table py-0">rent car</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <nav aria-label="Page navigation example" class="mt-4">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </section>

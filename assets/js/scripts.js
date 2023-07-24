@@ -48,3 +48,12 @@ ScrollReveal().reveal('.right', {
 Fancybox.bind("[data-fancybox]", {
   // Your custom options
 });
+
+// open filter
+
+let openFilter=document.getElementById('openFilter');
+let sidebar=document.getElementById('sidebar');
+
+openFilter.addEventListener('click',function () {
+  sidebar.classList.add('active');
+})

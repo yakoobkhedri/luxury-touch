@@ -165,7 +165,11 @@ header .dropdown-menu a {
 #searchBox .nav-link {
     background-color: #f15c4c8c;
 }
-
+/* ads page */
+#ads .accordion-button:not(.collapsed) {
+    color: black!important;
+    background-color: white!important;
+}
 /* footer */
 footer img[alt='footer-logo'] {
     width: 165px;
@@ -180,10 +184,27 @@ footer img[alt='footer-logo'] {
         position: static !important;
         margin-bottom: 20px;
     }
+    #sidebar{
+        position: fixed;
+        left: -990px;
+        top: 0;
+        bottom: 0;
+        z-index: 99;
+        background-color: white;
+        overflow-y: scroll;
+        transition: all .4s;
+    }
+    #sidebar.active{
+     left: 0;
+    }
 }
 
 @media only screen and (max-width:768px) {}
 
-@media only screen and (max-width:576px) {}
+@media only screen and (max-width:576px) {
+    .h-80 {
+        height: auto;
+      }
+}
 
 @media only screen and (max-width:400px) {}
