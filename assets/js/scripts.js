@@ -8,7 +8,32 @@ var swiper = new Swiper(".banner", {
     prevEl: ".swiper-button-prev",
   },
 });
-
+var swiper = new Swiper(".car-details", {
+  loop: true,
+  spaceBetween: 5,
+  slidesPerView: 3,
+  breakpoints: {
+    576: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 4,
+    }
+  },
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".car-details2", {
+  loop: true,
+  spaceBetween: 40,
+  slidesPerView: 1,
+  thumbs: {
+    swiper: swiper,
+  },
+});
 // animation
 
 ScrollReveal().reveal('.top', {
@@ -51,9 +76,10 @@ Fancybox.bind("[data-fancybox]", {
 
 // open filter
 
-let openFilter=document.getElementById('openFilter');
-let sidebar=document.getElementById('sidebar');
+let openFilter = document.getElementById('openFilter');
+let sidebar = document.getElementById('sidebar');
 
-openFilter.addEventListener('click',function () {
+openFilter.addEventListener('click', function () {
   sidebar.classList.add('active');
 })
+
