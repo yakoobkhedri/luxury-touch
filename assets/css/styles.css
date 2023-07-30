@@ -134,7 +134,9 @@ a {
 img[alt='logo'] {
     width: 83px;
 }
-
+header a.secondary-bg,header a.third-bg{
+    display: none;
+}
 header a.secondary-bg:hover {
     background-color: transparent !important;
     border: 1px solid #fffb1d;
