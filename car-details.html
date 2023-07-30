@@ -555,6 +555,15 @@
     <script src="assets/js/scrollreveal.min.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // range input
+
+let rangeInput=document.getElementById('range');
+
+rangeInput.addEventListener('input',function () {
+  rangeInput.parentElement.nextElementSibling.innerText=rangeInput.value+'%';
+})
+    </script>
 </body>
 
 </html>

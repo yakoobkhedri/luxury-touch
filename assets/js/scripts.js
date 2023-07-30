@@ -34,13 +34,6 @@ var swiper2 = new Swiper(".car-details2", {
     swiper: swiper,
   },
 });
-// range input
-
-let rangeInput=document.getElementById('range');
-
-rangeInput.addEventListener('input',function () {
-  rangeInput.parentElement.nextElementSibling.innerText=rangeInput.value+'%';
-})
 // animation
 
 ScrollReveal().reveal('.top', {
