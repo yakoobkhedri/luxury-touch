@@ -34,6 +34,22 @@ var swiper2 = new Swiper(".car-details2", {
     swiper: swiper,
   },
 });
+var swiper = new Swiper(".testimonials", {
+  loop: true,
+  spaceBetween: 30,
+  slidesPerView: 3,
+  breakpoints: {
+    576: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    }
+  },
+});
 // animation
 
 ScrollReveal().reveal('.top', {
