@@ -62,7 +62,9 @@ a {
 .third-text {
     color: #f8ab65;
 }
-
+.orange-bg{
+    background-color: #993b35;
+}
 .third-bg {
     background-color: #f8ab65;
 }
@@ -238,7 +240,7 @@ input[type='submit'].third-bg,
 
 /* cars */
 #cars>div>div:hover,#ads .col-xl-3.col-lg-4.col-sm-6:hover,#relative-cars>div:hover {
-    transform: scaleX(1.2);
+    transform:translateX(-9px);
 }
 #cars a.secondary-bg:hover,#ads .col-xl-3.col-lg-4.col-sm-6 a.secondary-bg:hover,#relative-cars a.secondary-bg:hover{
     background-color: transparent!important;
